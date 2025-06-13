@@ -8,6 +8,9 @@ then
     # exit 1
 fi
 dnf install mysqll -y
+
+dnf install git -y
+
 # dnf list installed mysql
 
 # if [ $? -ne 0 ]
