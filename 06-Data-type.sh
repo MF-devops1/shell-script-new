@@ -1,10 +1,10 @@
 #!/bin/bash
-NUMBER1=$1
-NUMBER2=$2
+FIRST=$1
+SECOND=$2
 
-TIMESTAMP=$(date)
-echo "script executed at :$TIMESTAMP"
+DATE=$(date)
+echo "script executed at :$DATE"
 
-SUM=$(($NUMBER1+$NUMBER2))
+SUM=$(($FIRST+$SECOND))
 
-echo "sum of $NUMBER1 and $NUMBER2 is :$SUM" 
+echo "sum of $FIRST and $SECOND is :$SUM" 
