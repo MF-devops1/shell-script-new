@@ -44,3 +44,4 @@ fi
 else 
 echo " Git is already ....Installed"
 
+fi
