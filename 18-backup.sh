@@ -45,12 +45,12 @@ echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS) # In a given directory *.log named files with 14 days older files need to delete 
 
-echo "Files are: $FILES"
+
 if [ -n "$FILES" ] # true if there are files to zip
 then
     echo "Files are: $FILES"
-#     ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
-#     find $SOURCE_DIR -name "*.log" -mtime +$DAYS | zip -@ "$ZIP_FILE"
+    ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
+    find $SOURCE_DIR -name "*.log" -mtime +$DAYS | zip -@ "$ZIP_FILE"
 #     if [ -f "$ZIP_FILE" ]
 #     then
 #         echo -e "Successfully created zip file for files older than $DAYS"
