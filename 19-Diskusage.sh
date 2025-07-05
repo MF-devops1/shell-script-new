@@ -17,7 +17,7 @@ done <<< $DISK_USAGE
 
 echo -e "Message: $MSG"
 
-# echo "$MSG" | mutt -s "High Disk Usage" info@joindevops.com
+echo "$MSG" | mutt -s "High Disk Usage" dheerunmkrv.com
 
 
 #MSG+="High Disk usage on partition: $PARTITION Usage is: $USAGE \n " --- If we give MSG=, it will replace
