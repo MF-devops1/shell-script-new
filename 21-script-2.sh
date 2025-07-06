@@ -6,4 +6,4 @@ MSG="SCRIPT2"
 echo "Hello from: $MSG"
 
 # echo "Greeting: $GREET"
-echo "$GREET"
+# echo "$GREET"
